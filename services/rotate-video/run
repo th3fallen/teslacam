@@ -1,2 +1,2 @@
 #!/bin/sh
-exec /usr/bin/setuidgid pi /home/pi/teslacam/src/rotate-video.js
+exec pi /home/pi/teslacam/src/rotate-video.js
