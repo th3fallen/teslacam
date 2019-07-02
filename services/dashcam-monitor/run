@@ -1,2 +1,2 @@
 #!/bin/sh
-exec /home/pi/teslacam/src/dashcam-monitor.js
+exec /usr/bin/setuidgid pi /home/pi/teslacam/src/dashcam-monitor.js
