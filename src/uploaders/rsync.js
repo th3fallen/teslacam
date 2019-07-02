@@ -15,7 +15,7 @@ const attemptUpload = (filename, opts = {
   noop: false,
 }) => {
   try {
-    execSync(`rsync -tvPhr -e 'ssh -p 2225' ${filename} NAS:/volume1/NetBackup/ --progress --ignore-existing `);
+    execSync(`sudo rsync -tvPhr -e 'ssh -p 2225' ${filename} NAS:/volume1/NetBackup/ --progress --ignore-existing `);
 
     if (opts.deleteWhenComplete) {
       execSync(`rm ${filename}`);
